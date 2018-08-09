@@ -1,0 +1,242 @@
+.list-section{
+	@include position(fixed, 0 0 0 0);
+	@include transition(background $transition_long, color $transition_long);
+	@include overflow();
+	z-index: 1;
+	white-space: nowrap;
+
+	&.shop-section,
+	&.page-section{
+		white-space: normal;
+
+		.wrap .list-wrap .list a.half:hover:before,
+		.wrap .list-wrap .list a.full:hover:before{
+			content:'';
+		}
+	}
+
+	.woocommerce-checkout &,
+	.single &{
+		background: black;
+		color: white;
+
+		a{
+			color: white;
+		}
+	}
+
+	.wrap{
+		position: relative;
+		min-height: 100%;
+
+		.grid-lines{
+			@include position(absolute, 0 0 0 0);
+			z-index: 1;
+		}
+
+		.list-wrap{
+			position: relative;
+			min-height: 100%;
+
+			.sticky-head{
+				@include position(fixed, 0 0 null 0);
+				z-index: 2;
+
+				h3.basket-num{
+					height: 4vw;
+					overflow: visible;
+
+					a{
+						display: block;
+						position: relative;
+						background-repeat: repeat-x;
+						background-position: left 3.1vw;
+
+						@media (min-width: 775px){
+							background-position: left 3vw;
+						}
+
+						span{
+							display: block;
+						}
+
+						&:active,
+						&:hover {
+							background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAIAAACQd1PeAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAA5JREFUeNpiEGL4DxBgAAE5ARKYrCEqAAAAAElFTkSuQmCC);
+
+							&.has-prds:before{
+								position: absolute;
+								bottom: 1.2vw;
+								left:0;
+								width: 100%;
+								height: 1px;
+								background: $blue;
+								content: ' ';
+
+								@media (min-width: 768px) {
+									bottom: 0.2vw;
+								}
+
+								@media (min-width: 1200px) {
+									bottom: 0.25vw;
+								}
+							}
+						}
+
+					}
+				}
+
+				h3.tp{
+					margin-bottom: 0;
+					user-select:none;
+
+					span{
+						display: block;
+						-ms-user-select:none;
+						-webkit-user-select:none;
+						-moz-user-select:none;
+						user-select:none;
+						cursor: pointer;
+						display: block;
+						background-repeat: repeat-x;
+						background-position: left 6.4vw;
+
+						@media (min-width: 768px){
+							background-position: left 3.1vw;
+						}
+
+						&:active,
+						&:hover {
+							background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAIAAACQd1PeAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAA5JREFUeNpiEGL4DxBgAAE5ARKYrCEqAAAAAElFTkSuQmCC);
+						}
+					}
+				}
+			}
+
+			.list{
+				position: relative;
+				z-index: 1;
+				padding: 7px 0;
+
+				@media (min-width: 768px) {
+					padding: 1.1vw 0;
+				}
+
+				@media (max-width: 767px) {
+					font-size: 12.5vw;
+				}
+
+				&.awards{
+					@media (max-width: 767px) {
+						font-size: 21px;
+						font-size: 7vw;
+						line-height: 1;
+
+						a.full{
+							display: inline;
+							background-position: left 5vw;
+
+							&:after{
+								display: none;
+							}
+						}
+					}
+				}
+
+				@media (min-width: 768px) {
+					padding: 7vw 0 1.7vw;
+				}
+
+				@media (max-width: 767px) {
+					.col-7-three + .col-7-three{
+						margin-top: 5vw;
+					}
+				}
+
+				.text {
+					line-height: 1;
+
+					@media (max-width: 767px) {
+						font-size: 21px;
+						font-size: 7vw;
+						line-height: 1;
+
+						a{
+							background-position: left 5vw;
+						}
+					}
+				}
+
+				a.half,
+				a.full{
+					display: block;
+
+					&:active,
+					&:hover {
+						background-image: none;
+
+						&:before{
+							position: absolute;
+							bottom: 1.2vw;
+							left:0;
+							width: 100%;
+							height: 1px;
+							background: $link;
+
+							@media (min-width: 768px) {
+								bottom: 0.2vw;
+							}
+
+							@media (min-width: 1200px) {
+								bottom: 0.25vw;
+							}
+						}
+
+						&:after{
+							position: absolute;
+							top: 11.1vw;
+							left:0;
+							width: 100%;
+							height: 1px;
+							background: $link;
+							content:'';
+
+							@media (min-width: 768px) {
+								top: 3.1vw;
+							}
+
+							@media (min-width: 1200px) {
+								top: 3.05vw;
+							}
+						}
+					}
+				}
+
+				a.half{
+					&:active,
+					&:hover {
+						&:before,
+						&:after{
+							@media (min-width: 768px) {
+								width: calc(calc(100% / 7 * 4) - 8px);
+							}
+						}
+					}
+				}
+
+				article{
+					display: block;
+					position: relative;
+
+					.col{
+						padding-top: 0;
+						padding-bottom: 0;
+					}
+
+				}
+			}
+
+		}
+	}
+
+}

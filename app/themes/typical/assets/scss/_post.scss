@@ -1,0 +1,152 @@
+.block-item{
+	@include position(absolute, 0 0 0 0);
+	z-index: 2;
+	@include overflow();
+	@include transition($transition_long);
+
+	&.out{
+		@include transform(translateY(100%));
+	}
+
+	.thumbnails{
+		display: none;
+	}
+
+	.plus-sign{
+		position: fixed;
+		top: 0;
+		left: 0;
+		font-size: 70px;
+		color: $black;
+		user-select:none;
+		pointer-events:none;
+		z-index: 10;
+		display: none;
+		@include transform(translateX(-50%) translateY(-50%));
+	}
+
+	.wrap{
+		padding: 12vw;
+		position: relative;
+		min-height: 100%;
+
+		@media (min-width: 768px) {
+			padding: 10vw calc( calc(100vw / 7) - 4px);
+		}
+
+		@media (min-width: 1440px) {
+			padding: 10vw calc( calc(100vw / 7) - 2px);
+		}
+
+		.invisible-link{
+			@include position(absolute, 0 0 0 0);
+			background: rgba(0,0,0,0.1);
+			z-index: 1;
+		}
+
+		.inner{
+			position: relative;
+			z-index: 2;
+			background: white;
+
+			.grid-lines{
+				@include position(absolute, 0 0 0 0);
+				z-index: 1;
+			}
+
+			.article-wrap{
+				position: relative;
+				z-index: 2;
+				font-size: 16px;
+				font-size: 5vw;
+				line-height: 1;
+				padding-bottom: 6vw;
+
+				a{
+					background-position: left 5vw;
+				}
+
+				@media (min-width: 768px) {
+					font-size: 25px;
+					font-size: 1.9vw;
+
+					a{
+						background-position: left 1.9vw;
+
+						&.gallery:hover{
+							cursor: none;
+						}
+					}
+				}
+
+				@media (max-width: 767px) {
+					.meta-headers{
+						position: absolute;
+						left:0;
+						top:0;
+					}
+					.post-nav{
+						position: absolute;
+						right:0;
+						top:0;
+						width: auto;
+
+						.plus{
+							display: inline-block;
+							@include transform(rotate(45deg));
+						}
+					}
+				}
+
+				.head{
+					margin-bottom: 3vw;
+
+					@media (max-width: 767px) {
+						padding: 0 0 0 calc(calc(100% / 3) + 2px);
+					}
+
+					h1,h2{
+						margin: 0;
+						font-size: inherit;
+					}
+				}
+
+				.main-img{
+					display: block;
+					margin-bottom: 2vw;
+
+					@media (min-width: 768px) {
+						&.arrowed{
+							position: relative;
+
+							&:before{
+								position: absolute;
+								top: 50%;
+								content: '<';
+								left:-15px;
+								font-size: 24px;
+								@include transform(translateY(-50%));
+							}
+
+							&:after{
+								position: absolute;
+								top: 50%;
+								content: '>';
+								right:-15px;
+								font-size: 24px;
+								@include transform(translateY(-50%));
+							}
+						}
+					}
+				}
+
+				a.main-img{
+					cursor: none;
+				}
+
+			}
+		}
+
+	}
+
+}

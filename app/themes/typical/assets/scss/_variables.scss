@@ -1,0 +1,26 @@
+/* ==========================================================================
+	Variables
+/* ========================================================================== */
+
+/* Colors */
+$color: black;
+$link: #1200ff;
+$color_opposite: white;
+$background: white;
+
+$black: black;
+$red: red;
+$green: #00ff00;
+$blue: #1200ff;
+
+$transition_time: 0.2s;
+$transition_ease: ease-in-out;
+$transition: $transition_time $transition_ease;
+$transition_long: 0.4s $transition_ease;
+
+$body_font: 'TP Vorzeit Grotesk Demi', Helvetica, Arial, Verdana, sans-serif;
+
+/* Font Sizes */
+$size_base: 13px;
+$weight_base: 600;
+$lineheight_base: 1;

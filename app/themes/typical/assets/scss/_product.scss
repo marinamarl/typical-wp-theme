@@ -1,0 +1,81 @@
+.block-item{
+
+	.product{
+		font-size: 16px;
+		font-size: 5vw;
+		line-height: 1;
+
+		@media (min-width: 768px) {
+			font-size: 25px;
+			font-size: 1.6vw;
+		}
+
+		button, input, textarea{
+			font-size: 16px;
+			font-size: 5vw;
+			line-height: 1;
+
+			@media (min-width: 768px) {
+				font-size: 25px;
+				font-size: 1.6vw;
+			}
+		}
+
+		h1.normal{
+			font-size: 16px;
+			font-size: 5vw;
+			line-height: 1;
+
+			@media (min-width: 768px) {
+				font-size: 25px;
+				font-size: 1.6vw;
+			}
+		}
+
+		.added-msg,
+		.single_variation_wrap,
+		.single_checkout_button,
+		.single_variation{
+			margin-top: 1vw;
+
+			del{
+				font-size: 0.6em;
+			}
+
+			ins{
+				text-decoration: none;
+			}
+		}
+
+		.added-msg{
+			display: none;
+			color: $blue;
+		}
+
+		.single_add_to_cart_button{
+			margin-top: 1vw;
+
+			@media (min-width: 768px) {
+				width: 100%;
+			}
+		}
+
+		.woocommerce-variation-add-to-cart-disabled,
+		.reset_variations{
+			display: none;
+			display: block;
+		}
+
+		.quantity .qty{
+			width: 2em;
+			padding: 0;
+			border: 1px solid rgba(0,0,0,0.3);
+		}
+
+		.variations .value select{
+			width: 100%;
+		}
+
+	}
+}
+

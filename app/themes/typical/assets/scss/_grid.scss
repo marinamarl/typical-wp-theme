@@ -1,0 +1,171 @@
+.container {
+	@include clearfix();
+	position: relative;
+	margin: 0 auto;
+	padding: 0 10px;
+
+	@media (min-width: 768px) {
+		padding: 0 2vw;
+	}
+
+	@media (min-width: 1200px) {
+		padding: 0 20px;
+	}
+
+	&.full-h{
+		height: 100%;
+
+		.row, .col{
+			height: 100%;
+		}
+	}
+}
+
+.row {
+	@include clearfix();
+	margin-left: -3px;
+	margin-right: -3px;
+	text-align:center;
+	position: relative;
+
+	@media (min-width: 768px) {
+		margin-left: -10px;
+		margin-right: -10px;
+	}
+
+	.col{
+		position: relative;
+		min-height: 1px;
+		padding: 10px 3px;
+		float: left;
+		text-align: left;
+
+		@media (min-width: 768px) {
+			padding: 2vw 1vw;
+		}
+
+		@media (min-width: 1200px) {
+			padding: 20px 10px;
+		}
+
+
+		&.bordered{
+
+			&:after{
+				@include position(absolute, 10px 3px 10px 3px);
+				content: '';
+				border: 1px solid;
+				opacity: 0.3;
+
+				@media (min-width: 768px) {
+					@include position(absolute, 2vw 1vw 2vw 1vw);
+				}
+
+				@media (min-width: 1200px) {
+					@include position(absolute, 20px 10px 20px 10px);
+				}
+			}
+		}
+	}
+
+	&.xs{
+		.col{
+			padding: 10px 3px;
+
+			@media (min-width: 768px) {
+				padding: 2vw 5px;
+			}
+
+			@media (min-width: 1200px) {
+				padding: 20px 5px;
+			}
+
+			&.bordered{
+
+				&:after{
+					left:3px;
+					right:3px;
+
+					@media (min-width: 768px) {
+						left:5px;
+						right:5px;
+					}
+
+					@media (min-width: 1200px) {
+						left:5px;
+						right:5px;
+					}
+				}
+		}
+		}
+	}
+}
+
+.col-7 {
+	width: calc(100% / 7);
+
+	@media (max-width: 767px) {
+		width: calc(100% / 3);
+
+		&.mob-full{
+			width: 100%;
+		}
+	}
+}
+
+.col-7-double {
+	width: calc(100% / 7 * 2);
+
+	@media (max-width: 767px) {
+		width: calc(100% / 3 * 2);
+
+		&.mob-full{
+			width: 100%;
+		}
+	}
+}
+
+.col-7-three {
+	width: calc(100% / 7 * 3);
+
+	@media (max-width: 767px) {
+		width: calc(100% / 3 * 2);
+
+		&.mob-full{
+			width: 100%;
+		}
+	}
+}
+
+.col-7-four {
+	width: calc(100% / 7 * 4);
+
+	@media (max-width: 767px) {
+		width: calc(100% / 3 * 2);
+
+		&.mob-full{
+			width: 100%;
+		}
+	}
+}
+
+.col-7-five {
+	width: calc(100% / 7 * 5);
+
+	@media (max-width: 767px) {
+		width: 100%;
+	}
+}
+
+.col-7-six {
+	width: calc(100% / 7 * 6);
+
+	@media (max-width: 767px) {
+		width: calc(100% / 3 * 2);
+
+		&.mob-full{
+			width: 100%;
+		}
+	}
+}
+

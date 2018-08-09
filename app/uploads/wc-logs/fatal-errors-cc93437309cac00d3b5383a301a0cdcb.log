@@ -1,0 +1,118 @@
+2017-10-17T03:20:58+00:00 CRITICAL Uncaught Error: Call to a member function have_posts() on null in /Users/sirtimid/Projects/typical/app/themes/typical/template-awards.php:45
+Stack trace:
+#0 /Users/sirtimid/Projects/typical/admin/wp-includes/template-loader.php(74): include()
+#1 /Users/sirtimid/Projects/typical/admin/wp-blog-header.php(19): require_once('/Users/sirtimid...')
+#2 /Users/sirtimid/Projects/typical/index.php(18): require('/Users/sirtimid...')
+#3 {main}
+  thrown
+
+2017-10-22T18:51:13+00:00 CRITICAL Uncaught Error: Cannot use object of type WP_Error as array in /Users/sirtimid/Projects/typical/app/themes/typical/woocommerce/archive-product.php:83
+Stack trace:
+#0 /Users/sirtimid/Projects/typical/admin/wp-includes/template-loader.php(74): include()
+#1 /Users/sirtimid/Projects/typical/admin/wp-blog-header.php(19): require_once('/Users/sirtimid...')
+#2 /Users/sirtimid/Projects/typical/index.php(18): require('/Users/sirtimid...')
+#3 {main}
+  thrown
+
+2017-10-22T18:52:29+00:00 CRITICAL Uncaught Error: Cannot use object of type WP_Error as array in /Users/sirtimid/Projects/typical/app/themes/typical/woocommerce/archive-product.php:83
+Stack trace:
+#0 /Users/sirtimid/Projects/typical/admin/wp-includes/template-loader.php(74): include()
+#1 /Users/sirtimid/Projects/typical/admin/wp-blog-header.php(19): require_once('/Users/sirtimid...')
+#2 /Users/sirtimid/Projects/typical/index.php(18): require('/Users/sirtimid...')
+#3 {main}
+  thrown
+
+2017-10-22T18:52:46+00:00 CRITICAL Uncaught Error: Cannot use object of type WP_Error as array in /Users/sirtimid/Projects/typical/app/themes/typical/woocommerce/archive-product.php:83
+Stack trace:
+#0 /Users/sirtimid/Projects/typical/admin/wp-includes/template-loader.php(74): include()
+#1 /Users/sirtimid/Projects/typical/admin/wp-blog-header.php(19): require_once('/Users/sirtimid...')
+#2 /Users/sirtimid/Projects/typical/index.php(18): require('/Users/sirtimid...')
+#3 {main}
+  thrown
+
+2017-10-22T18:52:53+00:00 CRITICAL Uncaught Error: Cannot use object of type WP_Error as array in /Users/sirtimid/Projects/typical/app/themes/typical/woocommerce/archive-product.php:83
+Stack trace:
+#0 /Users/sirtimid/Projects/typical/admin/wp-includes/template-loader.php(74): include()
+#1 /Users/sirtimid/Projects/typical/admin/wp-blog-header.php(19): require_once('/Users/sirtimid...')
+#2 /Users/sirtimid/Projects/typical/index.php(18): require('/Users/sirtimid...')
+#3 {main}
+  thrown
+
+2017-10-22T19:23:08+00:00 CRITICAL Uncaught Error: Call to undefined function get_basket_count() in /Users/sirtimid/Projects/typical/app/themes/typical/includes/menu.php:85
+Stack trace:
+#0 /Users/sirtimid/Projects/typical/admin/wp-includes/class-wp-walker.php(146): NavWalker->start_el('<li id="menu-it...', Object(WP_Post), 0, Object(stdClass))
+#1 /Users/sirtimid/Projects/typical/app/themes/typical/includes/menu.php(44): Walker->display_element(Object(WP_Post), Array, 0, 0, Array, '<li id="menu-it...')
+#2 /Users/sirtimid/Projects/typical/admin/wp-includes/class-wp-walker.php(244): NavWalker->display_element(Object(WP_Post), Array, 0, 0, Array, '<li id="menu-it...')
+#3 /Users/sirtimid/Projects/typical/admin/wp-includes/nav-menu-template.php(520): Walker->walk(Array, 0, Object(stdClass))
+#4 /Users/sirtimid/Projects/typical/admin/wp-includes/nav-menu-template.php(191): walk_nav_menu_tree(Array, 0, Object(stdClass))
+#5 /Users/sirtimid/Projects/typical/app/themes/typical/includes/menu.php(30): wp_nav_menu(Object(stdClass))
+#6 /Users/sirtimid/Project
+
+2017-10-22T19:29:19+00:00 CRITICAL Uncaught Error: Call to undefined function get_checkout_url() in /Users/sirtimid/Projects/typical/app/themes/typical/woocommerce/archive-product.php:60
+Stack trace:
+#0 /Users/sirtimid/Projects/typical/admin/wp-includes/template-loader.php(74): include()
+#1 /Users/sirtimid/Projects/typical/admin/wp-blog-header.php(19): require_once('/Users/sirtimid...')
+#2 /Users/sirtimid/Projects/typical/index.php(18): require('/Users/sirtimid...')
+#3 {main}
+  thrown
+
+2017-10-22T19:29:32+00:00 CRITICAL Uncaught Error: Call to undefined function get_checkout_url() in /Users/sirtimid/Projects/typical/app/themes/typical/woocommerce/archive-product.php:60
+Stack trace:
+#0 /Users/sirtimid/Projects/typical/admin/wp-includes/template-loader.php(74): include()
+#1 /Users/sirtimid/Projects/typical/admin/wp-blog-header.php(19): require_once('/Users/sirtimid...')
+#2 /Users/sirtimid/Projects/typical/index.php(18): require('/Users/sirtimid...')
+#3 {main}
+  thrown
+
+2017-11-07T21:03:36+00:00 CRITICAL Uncaught Error: Cannot use object of type WP_Term as array in /Users/sirtimid/Projects/typical/app/themes/typical/includes/content.php:106
+Stack trace:
+#0 /Users/sirtimid/Projects/typical/app/themes/typical/partials/loop.php(81): the_primary_category(31, 'works')
+#1 /Users/sirtimid/Projects/typical/admin/wp-includes/template.php(690): require('/Users/sirtimid...')
+#2 /Users/sirtimid/Projects/typical/admin/wp-includes/template.php(647): load_template('/Users/sirtimid...', false)
+#3 /Users/sirtimid/Projects/typical/admin/wp-includes/general-template.php(167): locate_template(Array, true, false)
+#4 /Users/sirtimid/Projects/typical/app/themes/typical/template-home.php(11): get_template_part('partials/loop')
+#5 /Users/sirtimid/Projects/typical/admin/wp-includes/template-loader.php(74): include('/Users/sirtimid...')
+#6 /Users/sirtimid/Projects/typical/admin/wp-blog-header.php(19): require_once('/Users/sirtimid...')
+#7 /Users/sirtimid/Projects/typical/index.php(18): require('/Users/sirtimid...')
+#8 {main}
+  thrown
+
+2017-11-07T21:03:44+00:00 CRITICAL Uncaught Error: Cannot use object of type WP_Term as array in /Users/sirtimid/Projects/typical/app/themes/typical/includes/content.php:106
+Stack trace:
+#0 /Users/sirtimid/Projects/typical/app/themes/typical/partials/loop.php(81): the_primary_category(31, 'works')
+#1 /Users/sirtimid/Projects/typical/admin/wp-includes/template.php(690): require('/Users/sirtimid...')
+#2 /Users/sirtimid/Projects/typical/admin/wp-includes/template.php(647): load_template('/Users/sirtimid...', false)
+#3 /Users/sirtimid/Projects/typical/admin/wp-includes/general-template.php(167): locate_template(Array, true, false)
+#4 /Users/sirtimid/Projects/typical/app/themes/typical/template-home.php(11): get_template_part('partials/loop')
+#5 /Users/sirtimid/Projects/typical/admin/wp-includes/template-loader.php(74): include('/Users/sirtimid...')
+#6 /Users/sirtimid/Projects/typical/admin/wp-blog-header.php(19): require_once('/Users/sirtimid...')
+#7 /Users/sirtimid/Projects/typical/index.php(18): require('/Users/sirtimid...')
+#8 {main}
+  thrown
+
+2017-11-07T21:03:53+00:00 CRITICAL Uncaught Error: Cannot use object of type WP_Term as array in /Users/sirtimid/Projects/typical/app/themes/typical/includes/content.php:106
+Stack trace:
+#0 /Users/sirtimid/Projects/typical/app/themes/typical/partials/loop.php(81): the_primary_category(31, 'works')
+#1 /Users/sirtimid/Projects/typical/admin/wp-includes/template.php(690): require('/Users/sirtimid...')
+#2 /Users/sirtimid/Projects/typical/admin/wp-includes/template.php(647): load_template('/Users/sirtimid...', false)
+#3 /Users/sirtimid/Projects/typical/admin/wp-includes/general-template.php(167): locate_template(Array, true, false)
+#4 /Users/sirtimid/Projects/typical/app/themes/typical/template-home.php(11): get_template_part('partials/loop')
+#5 /Users/sirtimid/Projects/typical/admin/wp-includes/template-loader.php(74): include('/Users/sirtimid...')
+#6 /Users/sirtimid/Projects/typical/admin/wp-blog-header.php(19): require_once('/Users/sirtimid...')
+#7 /Users/sirtimid/Projects/typical/index.php(18): require('/Users/sirtimid...')
+#8 {main}
+  thrown
+
+2017-11-07T21:04:00+00:00 CRITICAL Uncaught Error: Cannot use object of type WP_Term as array in /Users/sirtimid/Projects/typical/app/themes/typical/includes/content.php:106
+Stack trace:
+#0 /Users/sirtimid/Projects/typical/app/themes/typical/partials/loop.php(81): the_primary_category(31, 'works')
+#1 /Users/sirtimid/Projects/typical/admin/wp-includes/template.php(690): require('/Users/sirtimid...')
+#2 /Users/sirtimid/Projects/typical/admin/wp-includes/template.php(647): load_template('/Users/sirtimid...', false)
+#3 /Users/sirtimid/Projects/typical/admin/wp-includes/general-template.php(167): locate_template(Array, true, false)
+#4 /Users/sirtimid/Projects/typical/app/themes/typical/template-home.php(11): get_template_part('partials/loop')
+#5 /Users/sirtimid/Projects/typical/admin/wp-includes/template-loader.php(74): include('/Users/sirtimid...')
+#6 /Users/sirtimid/Projects/typical/admin/wp-blog-header.php(19): require_once('/Users/sirtimid...')
+#7 /Users/sirtimid/Projects/typical/index.php(18): require('/Users/sirtimid...')
+#8 {main}
+  thrown
+
